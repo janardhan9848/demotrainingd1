@@ -1,0 +1,135 @@
+1Q .Give me some idea on what is a Data What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+ans: ### *What is Data?*
+
+Data refers to *raw facts and figures* that can be processed and analyzed to derive meaningful information. In the context of programming, data is typically stored in variables, and it can be manipulated and used by a program to perform operations. Data can be in various forms, such as numbers, text, or more complex structures like objects and arrays. 
+
+In programming languages, data is classified into two main categories: *Primitive Data Types* and *Non-Primitive Data Types*.
+
+---
+
+### *Primitive Data Types*
+
+Primitive data types are the *basic types of data* built into programming languages. These data types are *immutable* (they cannot be changed once created) and can only hold a *single value*. They are the simplest form of data and are used directly in programming.
+
+#### Common Primitive Data Types:
+
+1. *String*
+   - A string is a sequence of characters enclosed within single ('), double ("), or backtick (`` ` ``) quotes.
+   - Example:
+     javascript
+     let name = "John Doe"; // String
+     console.log(name); // Output: John Doe
+     
+
+2. *Number*
+   - A number can represent both *integers* and *floating-point numbers* (decimals).
+   - Example:
+     javascript
+     let age = 25; // Integer
+     let height = 5.9; // Floating-point number
+     console.log(age, height); // Output: 25 5.9
+     
+
+3. *Boolean*
+   - A boolean holds one of two possible values: true or false.
+   - Example:
+     javascript
+     let isStudent = true;
+     console.log(isStudent); // Output: true
+     
+
+4. *Undefined*
+   - A variable is of type undefined when it has been *declared* but *not initialized* with a value.
+   - Example:
+     javascript
+     let a;
+     console.log(a); // Output: undefined
+     
+
+5. *Null*
+   - null represents the *absence of a value* or the intentional setting of a variable to no value.
+   - Example:
+     javascript
+     let b = null;
+     console.log(b); // Output: null
+     
+
+6. *Symbol*
+   - A symbol is a *unique* and *immutable* primitive value used often for object property keys.
+   - Example:
+     javascript
+     let sym = Symbol('description');
+     console.log(sym); // Output: Symbol(description)
+     
+
+7. *BigInt*
+   - A BigInt is a numeric type that can represent *large integers* beyond the limits of the Number type.
+   - Example:
+     javascript
+     let largeNumber = 1234567890123456789012345678901234567890n; // BigInt
+     console.log(largeNumber); // Output: 1234567890123456789012345678901234567890n
+     
+
+---
+
+### *Non-Primitive Data Types*
+
+Non-primitive data types are more *complex* and can store *multiple values. They are typically **user-defined, **mutable* (can be changed after creation), and can hold collections of data. Unlike primitive data types, non-primitive data types are typically more structured.
+
+#### Common Non-Primitive Data Types:
+
+1. *Object*
+   - An object is a collection of key-value pairs, where each key is a property and its corresponding value is the property’s data.
+   - Example:
+     javascript
+     let person = {
+       name: "Alice",
+       age: 30,
+       isStudent: false
+     };
+     console.log(person); // Output: { name: "Alice", age: 30, isStudent: false }
+     
+
+2. *Array*
+   - An array is a *list-like* data structure that can hold multiple values of any type (including primitive and non-primitive values).
+   - Example:
+     javascript
+     let fruits = ["Apple", "Banana", "Cherry"];
+     console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+     
+
+3. *Function*
+   - A function is a block of code that performs a task or calculation. It can accept inputs (parameters) and return a result.
+   - Example:
+     javascript
+     function greet(name) {
+       return `Hello, ${name}!`;
+     }
+     console.log(greet("John")); // Output: Hello, John!
+     
+
+4. *Date*
+   - The Date object is used to represent and manipulate *dates and times*.
+   - Example:
+     javascript
+     let today = new Date();
+     console.log(today); // Output: Current date and time
+     
+
+5. *Math*
+   - The Math object provides *mathematical constants* and *functions* like Math.random() for generating random numbers or Math.max() to find the maximum value.
+   - Example:
+     javascript
+     let randomValue = Math.random();
+     console.log(randomValue); // Output: A random number between 0 and 1
+     
+
+6. JSON
+   - JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write. It is commonly used to transfer data between a server and a client.
+   - Example:
+     javascript
+     let personJSON = '{"name": "John", "age": 30}';
+     let person = JSON.parse(personJSON);
+     console.log(person); // Output: { name: "John", age: 30 }
+     
+
